@@ -10,6 +10,31 @@
     <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
     <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="css/main.css?ver=1.1.0">
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Check if there is a saved theme preference in localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    body.setAttribute('data-theme', savedTheme);
+  }
+
+  // Toggle between light and dark themes
+  themeToggle.addEventListener('click', function () {
+    const currentTheme = body.getAttribute('data-theme') || 'light';
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    body.setAttribute('data-theme', newTheme);
+
+    // Save the theme preference to localStorage
+    localStorage.setItem('theme', newTheme);
+  });
+});
+
+    </script>
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -24,6 +49,9 @@
       <div class="profile-page sidebar-collapse">
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
           <div class="container">
+            <button id="theme-toggle" class="btn btn-toggle" type="button" aria-label="Toggle Dark Mode">
+              <i id="dark-icon" style="color: #40a249;" class="fa fa-moon-o"></i>
+            </button>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
