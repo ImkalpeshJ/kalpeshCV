@@ -1,44 +1,76 @@
-Directory Structure
--------------------
-css\              - Stylesheets CSS files for the template.
-images\           - Images used in template.
-scripts\          - JavaScript used in the template.
-styles\           - SCSS source files for stylesheets CSS. Available in Purchased versions only.
-favicon.ico       - Favicon placeholder provided for the template.
-index.html        - Main HTML page to open the template in browser.
-*.html            - Additional HTML pages (if any).
-LICENSE-*.txt     - License file as per your downloaded variant.
+# My CV Website
 
-How to Edit the template
-------------------------
+Welcome to the repository for my personal CV website. This website showcases my skills, experience, and education in the field of Full Stack Development.
 
-1. Editing Content in template
+## Table of Contents
 
-To edit the content open the corresponding *.html files and open them
-in an editor such as VSCode or Notepad++.
-Search for the content you want to change and edit it to the text you want.
-Save the file and reopen HTML file in browser to see the changes.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Technologies Used](#technologies-used)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-2. Editing Styles of template
+## Introduction
 
-The main style is present in css\main.css which you can edit.
-You must know how to edit CSS files to do this.
-If you have purchased any of the premium version then you will also get
-SCSS source files which generates all the styles of the template.
-You can use these SCSS files to make your changes and regenerate CSS.
+This website serves as a digital version of my curriculum vitae, providing information about my professional background, skills, work experience, and education. It is designed to be visually appealing and user-friendly.
 
-3. Changing Images
+## Features
 
-You can change images inside the images\ folder.
-Make sure to name the file same as the original file.
-If you wish to change the name of the image file then you must
-also make corresponding change in the HTML file which refer to that image.
+- About Me: A brief introduction to who I am and my professional background.
+- Skills: Showcase of my technical skills with progress bars.
+- Experience: Details about my work experience with a timeline.
+- Education: Information about my educational background.
+- Contact: A form to get in touch with me and additional contact details.
+- Dark Mode: Toggle between light and dark modes for better user experience.
 
-How to use the template
------------------------
-Upload the contents to your webserver.
-index.html must be in the main (root) folder of your webserver.
-Do not change the name of the template folders or files unless you know
-what you are doing and are changing the names in HTML files too.
-For webhosting, you can go with https://templateflip.com/go/hosting for easy FTP file uploads.
+## Getting Started
 
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/ImkalpeshJ/kalpeshCV.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd kalpeshCV
+    ```
+
+3. Open the `index.html` file in a web browser.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- AOS Library (Animate On Scroll)
+- Font Awesome Icons
+
+## Folder Structure
+
+- `css/`: Stylesheets
+- `images/`: Images used in the website
+- `js/`: JavaScript files
+- `scripts/`: Additional scripts
+- `LICENSE`: License file
+- `index.html`: Main HTML file
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the [Creative CV License](LICENSE).
+
+All rights reserved. Design - [TemplateFlip](https://templateflip.com)
