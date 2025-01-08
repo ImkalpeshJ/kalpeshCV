@@ -5385,3 +5385,6 @@ body[data-theme="dark"] #light-icon {
 body[data-theme="light"] #dark-icon {
   opacity: 0.2;
 }
+.tooltip-inner {
+    color: #000 !important; /* Change tooltip text color to black */
+}
