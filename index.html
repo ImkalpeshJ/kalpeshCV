@@ -24,8 +24,8 @@
 
   // Toggle between light and dark themes
   themeToggle.addEventListener('click', function () {
-    const currentTheme = body.getAttribute('data-theme') || 'light';
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    const currentTheme = body.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
     body.setAttribute('data-theme', newTheme);
 
